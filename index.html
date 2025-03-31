@@ -1,84 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a la Teoría Musical</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="Css Style.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 1.html">Piano</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 2.html">Guitarra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 3.html">Ukulele</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Teoría Musical</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina 1.html">Piano</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina 2.html">Guitarra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina 3.html">Ukulele</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <h1>Introducción a la Teoría Musical</h1>
-    <p>La teoría musical es el estudio de los principios que rigen la música. Abarca desde los fundamentos de la notación y la estructura rítmica hasta la armonía, la melodía y la forma musical. Es una disciplina que ha evolucionado a lo largo de la historia, influenciada por el desarrollo de la música en diversas culturas.</p>
 
-    <h2>Historia de la Teoría Musical</h2>
-    <p>La teoría musical tiene raíces profundas en la antigüedad. Civilizaciones como la griega, la china y la india desarrollaron sistemas de notación y escalas. En la Grecia clásica, filósofos como Pitágoras estudiaron la relación entre las proporciones matemáticas y el sonido, estableciendo las bases de la afinación y la acústica.
+    <div class="container mt-5">
+        <h1>Introducción a la Teoría Musical</h1>
+        <p>La teoría musical es el estudio de los principios que rigen la música. Abarca desde los fundamentos de la notación y la estructura rítmica hasta la armonía, la melodía y la forma musical. Es una disciplina que ha evolucionado a lo largo de la historia, influenciada por el desarrollo de la música en diversas culturas.</p>
 
-        Durante la Edad Media, la música occidental se organizó en modos gregorianos. La notación neumática evolucionó hacia un sistema más preciso, permitiendo la composición polifónica en el Renacimiento. En el Barroco, figuras como Johann Sebastian Bach exploraron la tonalidad y la armonía funcional, conceptos que siguen siendo fundamentales en la música actual. En esta época, los acordes básicos como Do (C), Re (D), Mi (E), Fa (F), Sol (G), La (A) y Si (B) comenzaron a estructurarse dentro del sistema tonal.</p>
-    
-    <h2>Elementos Fundamentales de la Música
-    </h2>
-    <ol>
-        <li>
-            <h4>Ritmo</h4>
-            <p>El ritmo es la organización del tiempo en la música. Se compone de pulsos, acentos y patrones rítmicos. Los compases dividen el tiempo en estructuras regulares, mientras que la métrica determina la organización de los acentos.</p>
-            <img src="./IMG/Ritmo.png" alt="">
-        </li>
+        <h2>Historia de la Teoría Musical</h2>
+        <p>La teoría musical tiene raíces profundas en la antigüedad. Civilizaciones como la griega, la china y la india desarrollaron sistemas de notación y escalas. En la Grecia clásica, filósofos como Pitágoras estudiaron la relación entre las proporciones matemáticas y el sonido, estableciendo las bases de la afinación y la acústica.</p>
+        <p>Durante la Edad Media, la música occidental se organizó en modos gregorianos. La notación neumática evolucionó hacia un sistema más preciso, permitiendo la composición polifónica en el Renacimiento. En el Barroco, figuras como Johann Sebastian Bach exploraron la tonalidad y la armonía funcional, conceptos que siguen siendo fundamentales en la música actual. En esta época, los acordes básicos como Do (C), Re (D), Mi (E), Fa (F), Sol (G), La (A) y Si (B) comenzaron a estructurarse dentro del sistema tonal.</p>
+        
+        <h2>Elementos Fundamentales de la Música</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="./IMG/Ritmo.png" class="card-img-top" alt="Ritmo">
+                    <div class="card-body">
+                        <h4 class="card-title">Ritmo</h4>
+                        <p class="card-text">El ritmo es la organización del tiempo en la música. Se compone de pulsos, acentos y patrones rítmicos. Los compases dividen el tiempo en estructuras regulares, mientras que la métrica determina la organización de los acentos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="./IMG/Melodia.png" class="card-img-top" alt="Melodía">
+                    <div class="card-body">
+                        <h4 class="card-title">Melodía</h4>
+                        <p class="card-text">La melodía es una sucesión de notas con una estructura definida. Puede ser tonal o modal, dependiendo del sistema en el que se base. La combinación de frases melódicas forma motivos y temas musicales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="./IMG/Armonia.webp" class="card-img-top" alt="Armonía">
+                    <div class="card-body">
+                        <h4 class="card-title">Armonía</h4>
+                        <p class="card-text">La armonía estudia la combinación de sonidos simultáneos. Los acordes, formados por la superposición de terceras, son la base de la armonía tonal. La progresión armónica guía el movimiento de una pieza musical y establece su tensión y resolución.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="./IMG/Escalas y modos.png" class="card-img-top" alt="Escalas y Modos">
+                    <div class="card-body">
+                        <h4 class="card-title">Escalas y Modos</h4>
+                        <p class="card-text">Las escalas son secuencias de notas organizadas por tonos y semitonos. En la música occidental, las escalas mayor y menor son las más utilizadas. Sin embargo, existen escalas modales (dórico, frigio, lidio, etc.) y escalas exóticas, como la pentatónica o la octatónica, que amplían la paleta sonora del compositor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <img src="./IMG/Forma.png" class="card-img-top" alt="Forma Musical">
+                    <div class="card-body">
+                        <h4 class="card-title">Forma Musical</h4>
+                        <p class="card-text">La forma es la estructura organizativa de una composición. Puede ser binaria, ternaria, rondó, sonata, entre otras. En la música popular, la forma más común es la de verso y estribillo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <li>
-            <h4>Melodía</h4>
-            <p>La melodía es una sucesión de notas con una estructura definida. Puede ser tonal o modal, dependiendo del sistema en el que se base. La combinación de frases melódicas forma motivos y temas musicales.</p>
-            <img src="./IMG/Melodia.png" alt="">
-        </li>
+        <h2>Sistemas de Afinación y Temperamento</h2>
+        <p>El sistema de afinación ha sido un tema de debate en la historia de la música. En el sistema pitagórico, las relaciones interválicas se basaban en quintas puras, pero esto generaba problemas de afinación. Con el desarrollo del temperamento igual, especialmente en la época de Bach, se estableció un sistema donde cada semitono es equidistante, permitiendo la modulación entre tonalidades sin grandes desafinaciones.</p>
 
-        <li>
-            <h4>Armonía</h4>
-            <p>La armonía estudia la combinación de sonidos simultáneos. Los acordes, formados por la superposición de terceras, son la base de la armonía tonal. La progresión armónica guía el movimiento de una pieza musical y establece su tensión y resolución.</p>
-            <img src="./IMG/Armonia.webp" alt="">
-        </li>
+        <h2>Aplicaciones de la Teoría Musical</h2>
+        <p>El conocimiento de la teoría musical no solo es útil para compositores y músicos, sino también para productores, arreglistas y educadores. En la música contemporánea, se combina con la tecnología para crear nuevas formas de expresión, desde la música electrónica hasta la inteligencia artificial aplicada a la composición.</p>
+    </div>
 
-        <li>
-            <h4>Escalas y Modos</h4>
-            <p>Las escalas son secuencias de notas organizadas por tonos y semitonos. En la música occidental, las escalas mayor y menor son las más utilizadas. Sin embargo, existen escalas modales (dórico, frigio, lidio, etc.) y escalas exóticas, como la pentatónica o la octatónica, que amplían la paleta sonora del compositor.</p>
-            <img src="./IMG/Escalas y modos.png" alt="">
-        </li>
-
-        <li>
-            <h4>Forma Musical</h4>
-            <p>La forma es la estructura organizativa de una composición. Puede ser binaria, ternaria, rondó, sonata, entre otras. En la música popular, la forma más común es la de verso y estribillo.</p>
-            <img src="./IMG/Forma.png" alt="">
-        </li>
-    </ol>
-
-    <h2>Sistemas de Afinación y Temperamento</h2>
-    <p>El sistema de afinación ha sido un tema de debate en la historia de la música. En el sistema pitagórico, las relaciones interválicas se basaban en quintas puras, pero esto generaba problemas de afinación. Con el desarrollo del temperamento igual, especialmente en la época de Bach, se estableció un sistema donde cada semitono es equidistante, permitiendo la modulación entre tonalidades sin grandes desafinaciones.</p>
-
-    <h2>Aplicaciones de la Teoría Musical</h2>
-    <p>El conocimiento de la teoría musical no solo es útil para compositores y músicos, sino también para productores, arreglistas y educadores. En la música contemporánea, se combina con la tecnología para crear nuevas formas de expresión, desde la música electrónica hasta la inteligencia artificial aplicada a la composición./p>
-
-    <footer>
-        <ul>
-            <li>Benward, B., & Saker, M. (2015). Music in Theory and Practice. McGraw-Hill Education.</li>
-            <li>Piston, W. (1987). Harmony. W. W. Norton & Company.</li>
-            <li>Schoenberg, A. (1978). Fundamentals of Musical Composition. Faber & Faber.</li>
-        </ul>
+    <footer class="mt-5">
+        <div class="container">
+            <ul>
+                <li>Benward, B., & Saker, M. (2015). Music in Theory and Practice. McGraw-Hill Education.</li>
+                <li>Piston, W. (1987). Harmony. W. W. Norton & Company.</li>
+                <li>Schoenberg, A. (1978). Fundamentals of Musical Composition. Faber & Faber.</li>
+            </ul>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

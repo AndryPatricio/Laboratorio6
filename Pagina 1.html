@@ -1,30 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piano</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="Css Style.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 1.html">Piano</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 2.html">Guitarra</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Pagina 3.html">Ukulele</a>
-                </li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Teoría Musical</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Pagina 1.html">Piano</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina 2.html">Guitarra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Pagina 3.html">Ukulele</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+    <div class="container mt-5">
+        <h1>El Piano y la Formación de los Acordes</h1>
+        <p>El piano es uno de los instrumentos más versátiles y utilizados en la música. Su disposición de teclas permite tocar melodías, armonías y ritmos con facilidad. Cada tecla representa una nota musical, y al combinarlas correctamente, se pueden formar acordes y escalas.</p>
+        
+        <h2>Estructura del Piano</h2>
+        <p>El piano tiene teclas blancas y negras organizadas en grupos de siete y cinco, respectivamente. Las teclas blancas corresponden a las notas naturales (Do, Re, Mi, Fa, Sol, La, Si), mientras que las negras representan las notas alteradas (sostenidos ♯ y bemoles ♭).</p>
+        <p>Los acordes básicos se construyen superponiendo notas en intervalos de tercera. Los más comunes son los acordes mayores y menores, cada uno con su propia estructura.</p>
+        
+        <h2>Cómo Tocar los Acordes Básicos en el Piano</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Do-mayor-piano.png" class="card-img-top" alt="Acorde Do Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Do (C)</h4>
+                        <p class="card-text">Para tocar Do mayor (C), usa:<br>
+                        Do (C) → Se encuentra antes de cada grupo de dos teclas negras.<br>
+                        Mi (E) → Dos teclas blancas arriba de Do.<br>
+                        Sol (G) → Dos teclas blancas arriba de Mi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Re-mayor-piano.png" class="card-img-top" alt="Acorde Re Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Re (D)</h4>
+                        <p class="card-text">Para tocar Re mayor (D), usa:<br>
+                        Re (D) → Se encuentra entre las dos teclas negras del primer grupo.<br>
+                        Fa♯ (F#) → Primera tecla negra del grupo de tres.<br>
+                        La (A) → Dos teclas blancas arriba de Fa♯.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Mi-mayor-piano.png" class="card-img-top" alt="Acorde Mi Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Mi (E)</h4>
+                        <p class="card-text">Para tocar Mi mayor (E), usa:<br>
+                        Mi (E) → A la derecha de Re.<br>
+                        Sol♯ (G#) → Segunda tecla negra del grupo de tres.<br>
+                        Si (B) → Dos teclas blancas arriba de Sol♯.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Fa-mayor-piano.png" class="card-img-top" alt="Acorde Fa Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Fa (F)</h4>
+                        <p class="card-text">Para tocar Fa mayor (F), usa:<br>
+                        Fa (F) → Justo antes del grupo de tres teclas negras.<br>
+                        La (A) → Dos teclas blancas arriba de Fa.<br>
+                        Do (C) → Dos teclas blancas arriba de La.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Sol-mayor-piano.png" class="card-img-top" alt="Acorde Sol Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Sol (G)</h4>
+                        <p class="card-text">Para tocar Sol mayor (G), usa:<br>
+                        Sol (G) → A la derecha de Fa.<br>
+                        Si (B) → Dos teclas blancas arriba de Sol.<br>
+                        Re (D) → Dos teclas blancas arriba de Si.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-La-mayor-piano.png" class="card-img-top" alt="Acorde La Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">La (A)</h4>
+                        <p class="card-text">Para tocar La mayor (A), usa:<br>
+                        La (A) → A la derecha de Sol.<br>
+                        Do♯ (C#) → Primera tecla negra del grupo de dos.<br>
+                        Mi (E) → Dos teclas blancas arriba de Do♯.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <img src="./IMG/Acorde-Si-mayor-piano.png" class="card-img-top" alt="Acorde Si Mayor">
+                    <div class="card-body">
+                        <h4 class="card-title">Si (B)</h4>
+                        <p class="card-text">Para tocar Si mayor (B), usa:<br>
+                        Si (B) → A la derecha de La.<br>
+                        Re♯ (D#) → Segunda tecla negra del grupo de dos.<br>
+                        Fa♯ (F#) → Primera tecla negra del grupo de tres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

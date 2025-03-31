@@ -17,46 +17,14 @@ body {
     background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    padding-top: 56px; /* Para el navbar fijo */
 }
 
 /* Contenedor principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Barra de navegación */
-nav {
-    background-color: var(--primary-color);
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    color: var(--light-color);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.nav-link:hover, .nav-link.active {
-    background-color: var(--secondary-color);
-    color: white;
+    padding: 20px;
 }
 
 /* Encabezados */
@@ -80,36 +48,17 @@ h4 {
     margin: 20px 0 10px;
 }
 
-/* Lista de elementos fundamentales */
-ol {
-    list-style: none;
-    padding-left: 0;
-    margin: 25px 0;
-}
-
-ol li {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Contenido de cada elemento */
-.element-content {
-    display: flex;
-    flex-direction: column;
+/* Lista de elementos */
+ul {
+    padding-left: 20px;
 }
 
 /* Estilos para imágenes */
-.element-img {
-    width: 100%;
-    max-width: 500px;
+img {
+    max-width: 100%;
     height: auto;
     border-radius: 6px;
-    margin: 15px auto;
+    margin: 15px 0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: block;
 }
@@ -134,40 +83,23 @@ footer li {
     font-size: 0.9rem;
 }
 
-/* Diseño responsive */
-@media (min-width: 768px) {
-    .element-content {
-        flex-direction: row;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .element-text {
-        flex: 1;
-    }
-    
-    .element-img {
-        flex: 1;
-        max-width: 400px;
-        margin: 0;
-    }
-    
-    /* Alternar imagen y texto */
-    ol li:nth-child(even) .element-content {
-        flex-direction: row-reverse;
-    }
+/* Ajustes para el navbar de Bootstrap */
+.navbar {
+    background-color: var(--primary-color) !important;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--light-color);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+/* Responsive */
 @media (max-width: 767px) {
-    .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .nav-item {
-        margin: 5px 0;
-    }
-    
     h1 {
         font-size: 1.8rem;
     }
